@@ -211,10 +211,23 @@ h1 {
   font-weight: var(--font-weight-black);
 }
 
+.subscription a:hover {
+  color: var(--neutral-desaturated-blue);
+  text-decoration: none;
+}
+
 .payment-btn {
   background-color: var(--secondary-bright-blue);
   color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.payment-btn:hover {
+  background-color: var(--neutral-desaturated-blue);
+}
+
+.cancel-btn:hover {
+  color: var(--neutral-dark-blue);
 }
 
 @media (min-width: 450px) {
