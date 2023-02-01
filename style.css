@@ -234,6 +234,7 @@ h1 {
   body {
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   article.card {
