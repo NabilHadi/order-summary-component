@@ -135,7 +135,7 @@ body {
 h1 {
   font-weight: var(--font-weight-black);
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -147,12 +147,12 @@ h1 {
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: white;
   overflow: hidden;
 }
 
-.card .text-content {
+.text-content {
   padding: 2rem;
   padding-bottom: 1rem;
   display: grid;
@@ -174,11 +174,12 @@ h1 {
 
 .subscription {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: max-content 2fr 1fr;
   align-items: center;
   padding: 1rem;
   background-color: var(--neutral-pale-blue);
   border-radius: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .subscription img {
@@ -188,7 +189,6 @@ h1 {
 .subscription__type,
 .subscription__price {
   margin-left: 1rem;
-  font-size: 0.875rem;
 }
 
 .subscription__type {
@@ -199,6 +199,7 @@ h1 {
 
 .subscription__price {
   grid-row: 2/3;
+  font-size: 0.875rem;
 }
 
 .subscription a {
@@ -214,4 +215,19 @@ h1 {
   background-color: var(--secondary-bright-blue);
   color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media (min-width: 450px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  article.card {
+    max-width: 400px;
+  }
+
+  .text-content {
+    padding: 2rem 3rem;
+  }
 }
