@@ -135,12 +135,12 @@ body {
 h1 {
   font-weight: var(--font-weight-black);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .btn {
   text-align: center;
-  padding: 1rem;
+  padding: 0.9rem;
   border-radius: 10px;
   cursor: pointer;
   font-weight: var(--font-weight-bold);
@@ -238,10 +238,16 @@ h1 {
   }
 
   article.card {
-    max-width: 400px;
+    max-width: 450px;
   }
 
   .text-content {
-    padding: 2rem 3rem;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+  }
+
+  .subscription {
+    padding: 1.5rem;
   }
 }
